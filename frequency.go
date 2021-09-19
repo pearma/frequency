@@ -29,3 +29,12 @@ func randomFormat() string {
     }
     return formats[rand.Intn(len(formats))]
 }
+
+type Edldate struct {
+	X time.Time
+        Y int
+}
+
+func (v *Edldate) Show() {
+	fmt.Println(v.Y)
+}
