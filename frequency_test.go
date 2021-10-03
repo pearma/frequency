@@ -15,6 +15,7 @@ func TestWithGreeting(t *testing.T) {
 	}
 }
 func TestWithEdl(t *testing.T) {
-	x := Edldate{time.Now(), 10}
-	x.Show()
+	x := Edldate{Quarter, 10}
+	//x.Show()
+	x.NextDate(time.Date(2021, 10, 3, 0, 0, 0, 0, time.UTC))
 }
